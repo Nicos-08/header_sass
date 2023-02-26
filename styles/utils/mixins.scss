@@ -1,0 +1,14 @@
+@import url(../base/fonts.scss);
+
+
+// Styles de textes :
+
+@mixin text-style($ecran) {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    @if ($ecran == "mobile") {
+        font-size: 25px;
+    } @else {
+        font-size: 20px;
+    }
+}
