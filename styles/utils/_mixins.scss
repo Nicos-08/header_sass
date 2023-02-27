@@ -1,0 +1,29 @@
+@import url(../base/fonts.scss);
+
+
+// Styles de textes :
+
+@mixin text-style($ecran) {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    @if ($ecran == "mobile") {
+        font-size: 25px;
+    } @else {
+        font-size: 20px;
+    }
+}
+
+// Couleurs de textes :
+
+@mixin text-color($format) {
+    @if ($format == "normal") {
+        $text-color: #000000;        
+    }
+    @if ($format == "hover") {
+        $text-color: #0029FF;
+    }
+    @if ($format == "clicked") {
+        $text-color: #0085FF;
+    }
+    color: $text-color;
+}
