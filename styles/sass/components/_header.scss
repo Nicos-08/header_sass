@@ -1,7 +1,7 @@
 @import "../utils/mixins.scss";
 @import "../utils/variables.scss";
 
-$test: #fff;
+
 .header {
     height: 100px;
     width: 100%;
@@ -21,8 +21,21 @@ $test: #fff;
         width: 100%;
         justify-content: flex-end;
         align-items: center;
+        @media screen and (max-width: 700px) {
+            li {
+                display: none;
+            }
+            svg {
+                display: block !important;
+                cursor: pointer;
+                margin-right: 30px;
+            }
+        }
+        svg {
+            display: none;
+        }
         li {
-            margin-right: 70px;
+            margin-right: 6vw;
             @include text-color("normal");
             @include text-style("desktop");
             &:hover {
@@ -30,10 +43,9 @@ $test: #fff;
                 @include text-color("hover");
             }
             &:active {
-                @include text-color("clicked")
+                @include text-color("clicked");
             }
-
         }
     }
 }
-    
+

@@ -20,8 +20,21 @@
   justify-content: flex-end;
   align-items: center;
 }
+@media screen and (max-width: 700px) {
+  .header-liens li {
+    display: none;
+  }
+  .header-liens svg {
+    display: block !important;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+}
+.header-liens svg {
+  display: none;
+}
 .header-liens li {
-  margin-right: 70px;
+  margin-right: 6vw;
   color: #000000;
   font-family: "Poppins", serif;
   font-weight: 400;
