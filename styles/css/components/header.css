@@ -3,4 +3,10 @@
   height: 100px;
   width: 100%;
   background-color: #FFFFFF;
-}/*# sourceMappingURL=header.css.map */
+  display: flex;
+}
+.header-logo img {
+  height: 65px;
+}
+
+/*# sourceMappingURL=header.css.map */

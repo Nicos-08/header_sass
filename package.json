@@ -1,0 +1,19 @@
+{
+  "name": "header_sass",
+  "version": "1.0.0",
+  "description": "Premiers pas avec SASS. Création d'un header responsive.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./styles/sass/base/_default.scss:./styles/css/base/default.css --watch ./styles/sass/base/_fonts.scss:./styles/css/base/fonts.css --watch ./styles/sass/components/_header.scss:./styles/css/components/header.css --watch ./styles/sass/components/_menu_burger.scss:./styles/css/components/menu_burger.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicos-08/header_sass.git"
+  },
+  "author": "Nicos-08",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nicos-08/header_sass/issues"
+  },
+  "homepage": "https://github.com/Nicos-08/header_sass#readme"
+}
