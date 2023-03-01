@@ -8,8 +8,31 @@ $test: #fff;
     background-color: $header-background-color;
     display: flex;
     &-logo {
+        display: flex;
+        align-items: center;
         img {
+            cursor: pointer;
             height: 65px;
+            margin-left: 50px;
+        }
+    }
+    &-liens {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        li {
+            margin-right: 70px;
+            @include text-color("normal");
+            @include text-style("desktop");
+            &:hover {
+                cursor: pointer;
+                @include text-color("hover");
+            }
+            &:active {
+                @include text-color("clicked")
+            }
+
         }
     }
 }

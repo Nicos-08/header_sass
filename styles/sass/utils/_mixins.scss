@@ -17,13 +17,12 @@
 
 @mixin text-color($format) {
     @if ($format == "normal") {
-        $text-color: #000000;        
+        color: #000000;        
     }
     @if ($format == "hover") {
-        $text-color: #0029FF;
+        color: #0029FF;
     }
     @if ($format == "clicked") {
-        $text-color: #0085FF;
+        color: #0085FF;
     }
-    color: $text-color;
 }
