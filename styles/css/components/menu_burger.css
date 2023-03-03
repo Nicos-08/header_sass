@@ -1,3 +1,88 @@
+@import url(../base/fonts.scss);
+html, body, .headerFlou {
+  height: 100%;
+}
 
+.header-menu_burger {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .headerFlou {
+    display: block;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  .headerFlou.flou {
+    opacity: 1;
+  }
+  .header-menu_burger {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    right: -60vh;
+    width: 60vw;
+    top: 0;
+    height: 70vh;
+    background-color: #FFFFFF;
+    border-radius: 40px 0 0 40px;
+  }
+  .header-menu_burger.open {
+    animation: updateMenuBurger 0.5s ease-in-out forwards;
+  }
+  .header-menu_burger.animation {
+    animation: reverseUpdateMenuBurger 0.5s ease-in-out forwards;
+  }
+  .header-menu_burger-liens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .header-menu_burger-liens li {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #000000;
+    margin-top: 64px;
+    margin-left: 50px;
+  }
+  .header-menu_burger-liens li:hover {
+    cursor: pointer;
+    color: #0029FF;
+  }
+  .header-menu_burger-liens li:active {
+    color: #0085FF;
+  }
+  .header-menu_burger svg {
+    float: left;
+    position: relative;
+    left: 30px;
+    top: 30px;
+    cursor: pointer;
+  }
+}
+@keyframes updateMenuBurger {
+  from {
+    right: -60vh;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes reverseUpdateMenuBurger {
+  from {
+    right: 0;
+  }
+  to {
+    right: -60vh;
+  }
+}
 
 /*# sourceMappingURL=menu_burger.css.map */

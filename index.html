@@ -14,16 +14,29 @@
 </head>
 <body>
     <div class="header">
-        <div class="header-logo">
-            <img src="https://logos-world.net/wp-content/uploads/2020/08/Canon-Logo-1956-present.jpg" alt="Logo">
+        <div class="page">
+            <div class="header-logo">
+                <img src="https://logos-world.net/wp-content/uploads/2020/08/Canon-Logo-1956-present.jpg" alt="Logo">
+            </div>
+            <ul class="header-liens">
+                <svg viewBox="0 0 24 24" width="35" height="35" onclick="updateMenu()" class="logo_menu_burger"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg>
+                <li>Accueil</li>
+                <li>Menu</li>
+                <li>Contact</li>
+                <li>Compte</li>
+            </ul>
         </div>
-        <ul class="header-liens">
-            <svg viewBox="0 0 24 24" width="35" height="35"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg>
-            <li>Accueil</li>
-            <li>Menu</li>
-            <li>Contact</li>
-            <li>Compte</li>
-        </ul>
-    </div>
+        <div class="header-menu_burger">
+            <svg viewBox="0 0 24 24" width="45" height="45" onclick="updateMenu()" ><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" /></svg>
+            <ul class="header-menu_burger-liens">
+                <li onclick="updateMenu()">Accueil</li>
+                <li onclick="updateMenu()">Menu</li>
+                <li onclick="updateMenu()">Contact</li>
+                <li onclick="updateMenu()">Compte</li>
+            </ul>
+        </div>
+    </div>    
 </body>
+<!--Javascript-->
+<script src="menu_burger.js" defer></script>
 </html>
