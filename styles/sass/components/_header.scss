@@ -2,18 +2,15 @@
 @import "../utils/variables.scss";
 
 
-
 .header {
-    .page {
-        height: 100px;
-        width: 100%;
-        background-color: $header-background-color;
-        display: flex;
-        position: relative;
-        left: 0;
-        top: 0;
-        z-index: 0;
-    }
+    height: 100px;
+    width: 100%;
+    background-color: $header-background-color;
+    display: flex;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 0;
     &-logo {
         display: flex;
         align-items: center;
@@ -21,6 +18,16 @@
             cursor: pointer;
             height: 65px;
             margin-left: 50px;
+        }
+    }
+    &-filtre {
+        &--active {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            animation: arriveeFlou 0.5s;
         }
     }
     &-liens {
@@ -53,6 +60,15 @@
                 @include text-color("clicked");
             }
         }
+    }
+}
+
+
+@keyframes arriveeFlou {
+    from {
+        opacity: 0;
+    } to {
+        overflow: 1;
     }
 }
 
