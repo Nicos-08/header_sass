@@ -28,6 +28,8 @@ html, body, .headerFlou {
     z-index: 2;
     right: -60vh;
     width: 60vw;
+    max-width: 310px;
+    min-width: 280px;
     top: 0;
     height: 70vh;
     background-color: #FFFFFF;
@@ -43,14 +45,14 @@ html, body, .headerFlou {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    height: 115%;
   }
   .header-menu_burger-liens li {
     font-family: "Poppins", serif;
     font-weight: 400;
     font-size: 25px;
     color: #000000;
-    margin-top: 64px;
+    margin-bottom: 64px;
     margin-left: 50px;
   }
   .header-menu_burger-liens li:hover {

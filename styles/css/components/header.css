@@ -46,11 +46,16 @@
   display: none;
 }
 .header-liens li {
-  margin-right: 6vw;
+  margin-right: 5vw;
   color: #000000;
   font-family: "Poppins", serif;
   font-weight: 400;
   font-size: 20px;
+}
+@media screen and (max-width: 1800px) {
+  .header-liens li {
+    margin-right: 6vw;
+  }
 }
 .header-liens li:hover {
   cursor: pointer;

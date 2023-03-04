@@ -32,6 +32,8 @@ html, body, .headerFlou {
         z-index: 2;
         right: -60vh;
         width: 60vw;
+        max-width: 310px;
+        min-width: 280px;
         top: 0;
         height: 70vh;
         background-color: $header-background-color;
@@ -46,11 +48,11 @@ html, body, .headerFlou {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 100%;
+            height: 115%;
             li {
                 @include text-style("mobile");
                 @include text-color("normal");
-                margin-top: 64px;
+                margin-bottom: 64px;
                 margin-left: 50px;
                 &:hover {
                     cursor: pointer;

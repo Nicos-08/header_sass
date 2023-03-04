@@ -49,7 +49,10 @@
             display: none;
         }
         li {
-            margin-right: 6vw;
+            @media screen and (max-width: 1800px) {
+                margin-right: 6vw;
+            }
+            margin-right: 5vw;
             @include text-color("normal");
             @include text-style("desktop");
             &:hover {
